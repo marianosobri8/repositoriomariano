@@ -1,0 +1,92 @@
+/*TIENDA*/
+
+.banner{
+    display: flex;
+    width: 100%;
+    height: 174px ;
+    justify-content: center;
+    padding:0px;
+}    
+.bannerPromociones{
+
+    width: 998px;
+    height: 174px;
+
+
+}
+.secciones{
+    text-align: center;
+
+}
+.flex-container{
+    display:flex;
+    background-color: whitesmoke;
+    padding: 10px;
+
+    justify-content: center;
+
+    
+}
+.flex-container div{  
+    background-color:white;
+    border:1px solid black ;
+    margin:10px;
+    
+
+}
+.producto1{
+    width: 300px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.cuadro1{
+    border: 5px solid black;
+}
+
+#tiendaCategorias{
+    background-color: black;
+}
+#tiendaCategorias ul{
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+
+}
+#tiendaCategorias ul li{
+    display: inline-block;
+
+}
+#tiendaCategorias ul li a{
+
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 70px; 
+}
+#tiendaCategorias ul li a:hover{
+    background-color: teal;
+
+
+}
+
+
+.carritoTienda{
+    width: 25px;
+    position: relative;
+    left: 40px;
+}
+.finalizarCompra{
+    float: right;
+    margin-right: 50px;
+    position: relative;
+    bottom: 40px;
+}
+
+.filtro{
+    background-color: whitesmoke
+}
+

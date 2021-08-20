@@ -1,0 +1,92 @@
+/*Contacto*/
+.contacto{
+    background-color: green;
+    color: white;
+}
+
+
+
+.formulario{
+    font-family: monospace;
+    background-color: #35757D;
+    width: 450px;
+    margin: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+        H2{
+            color: white;
+            text-align: center;
+            margin: 0;
+            font-size: 30px;
+        }
+        input, textarea{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+            border: none;
+        }
+        textarea{
+            min-height: 100px;
+            max-height:200px;
+        }
+}
+
+.boton{
+    background:whitesmoke;
+}
+.botonreset{
+    background: whitesmoke;
+}
+
+@media (max-width: 480px){
+    .formulario{
+        width: 100%;
+        margin: 0;
+    }
+    .listaContacto{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.listaContacto{
+    font-family: monospace;
+    width: 450px;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: #94A3D1;
+    
+    
+    dd{
+        text-align: center;
+    }
+    li{
+    color:black;
+
+    width: 100%;
+    }
+}
+span{
+    font-weight: bold;
+}
+
+.redes{
+    display: flex;
+    padding-top: 10px;
+    div{
+        margin: auto;
+        padding: 10px;
+    }
+}
+.iconoinst{
+    width: 50px;
+}
+.iconoface{
+    width: 50px;
+}
+.iconotwit{
+    width: 50px;
+}

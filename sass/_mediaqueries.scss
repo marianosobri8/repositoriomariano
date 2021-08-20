@@ -1,0 +1,154 @@
+
+/*media queries*/
+
+
+@media(max-width:578px){
+    .Galeria{
+        grid-template-columns: 1fr ; 
+    }
+    .Galeria_container:nth-child(1){
+        width: 500px;
+    }
+    .Galeria_container:nth-child(2){
+        grid-column-start: span 3;
+        width:100%;
+        height: auto; 
+    
+    }
+    .Galeria_container:nth-child(3){
+        grid-row-start: span 2;
+
+    }
+    .Galeria_container:nth-child(4){
+        grid-row: span 2;
+    
+    }
+    .Galeria_container:nth-child(5){
+        grid-row-start: span 1;
+    }
+    .Galeria_container:nth-child(8){
+        grid-column-start: span 3;
+        height: 400px;
+    }
+    .redSocial{
+        background-color: yellow;
+        height: 21px;
+        width: 100%;
+    }
+    .instagram{
+        float: left;
+        width: 20px;
+        margin-right: 1%;
+    }
+    .twitter{
+        float: left;
+        width: 20px;
+        margin-right: 1%;
+    }
+    .facebook{
+        float: left;
+        width: 20px;
+    }
+    .promocion{
+    text-align: center;
+    }
+    
+    .fotoJano{
+        width: 100%;
+        height: auto;
+    }
+    .suscribete{
+        position: relative;
+        top: 80px;
+        right: 15px;
+    }
+    }
+.facebook2{
+    width: 20px;
+}
+.twitter2{
+    width: 10px;
+} 
+@media(min-width:768px){
+    .Galeria{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .Galeria_container:nth-child(2){
+        grid-column-start: span 3;
+        height: 500px; 
+    
+    }
+    .Galeria_container:nth-child(3){
+        grid-row-start: span 2;
+    }
+    .Galeria_container:nth-child(4){
+        grid-row: span 2;
+    
+    }
+    .Galeria_container:nth-child(5){
+        grid-row-start: span 1;
+    }
+    .Galeria_container:nth-child(8){
+        grid-column-start: span 3;
+        height: 400px;
+    }
+    .redSocial{
+        background-color: yellow;
+        height: 21px;
+        width: 100%;
+    }
+    .instagram{
+        float: left;
+        width: 20px;
+        margin-right: 1%;
+    }
+    .twitter{
+        float: left;
+        width: 20px;
+        margin-right: 1%;
+    }
+    .facebook{
+        float: left;
+        width: 20px;
+    }
+    .promocion{
+    text-align: center;
+    }
+    
+    
+    .janoVerde{
+        display: none;
+    }
+
+}
+
+@media(min-width:1024px){
+    .Galeria{
+        grid-template-columns: repeat(4,1fr);
+        width: 90%;
+        margin: auto;
+    }
+    .Galeria_container:nth-child(1){
+        grid-row-start: span 3;
+        
+    }
+    .Galeria_container:nth-child(2){
+        grid-column-start: span 2;
+        height: 500px; 
+    
+    }
+    .Galeria_container:nth-child(3){
+        grid-row-start: span 1;
+    }
+    .Galeria_container:nth-child(4){
+        grid-row: span 2;
+    
+    }
+    .Galeria_container:nth-child(5){
+        grid-row-start: span 2;
+    }
+    .Galeria_containerm:nth-child(8){
+        grid-column-start: span 4;
+        height: 400px;
+    }
+}
