@@ -1,4 +1,6 @@
-
+#fondo{
+    background: black;
+}
 .slider_inicio{
     width: 95%;
     margin: auto;
@@ -20,11 +22,11 @@
     }
     img{
         margin-left: 500px;
-        width: auto;
-        heigth:auto;
+        width:auto;
+        height:auto;
         max-width: 100%;
         max-height: 400px
-    };
+    }
 }
 @keyframes cambio{
     0%  { margin-left: 0;}
@@ -35,6 +37,14 @@
 
     50% {margin-left: -200%;}
     70% {margin-left: -200%;}
+}
+
+.mensajes{
+    h3{
+        color: red;
+    }
+    display:flex;
+    
 }
 
 
