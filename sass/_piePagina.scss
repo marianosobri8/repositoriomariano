@@ -2,7 +2,12 @@
 
 
 .PiePagina{
-    background:#94A3D1 ;
+    font-family: monospace;
+    background:rgba(255, 255, 255, 0.1);
+    border-top: 2px solid white;
+    img{
+        margin-left: 10px;
+    }
 
 }
 .PiePagina h2{
@@ -19,8 +24,12 @@
     width: 80px;
 }
 .PiePagina_Subs_mensaje{
+    color: white;
     float: right;
-    transform: translate(-130pX,-75px)
+    transform: translate(-130pX,-75px);
+}
+.email{
+    width: 80%;
 }
 .PiePagina_Subs_mensaje h3{
     width: 100%;

@@ -15,7 +15,6 @@
     }
     li{
         border-radius: 10px;
-        border: 2px solid white;
         list-style: none;
         width: 100%;
         background-color: black;
@@ -40,61 +39,54 @@
 }
 
 .mensajes{
+    font-family: monospace;
     h3{
-        color: red;
+        color:white;
     }
     display:flex;
-    
-}
-
-
-/* Galeria Inicio*/ 
-
-.Galeria{
-    display: grid;
-    grid-template-columns:repeat(4,1fr) ;
-    padding: 10px;
-    grid-gap: 10px;
-    justify-content: center;
-    width: 90%;
-    margin: auto;
-
-}
-.Galeria_container{
-    position: relative;
-}
-.Galeria_container_foto{
-    width:100%;
-    height: 100%;
-    object-fit:cover;
-}
-.Galeria_container_titulo{
-    position: absolute;
-    bottom: 0%;
-    color: white;
-    margin: 0%;
-    background:linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1)) ;
+    background: rgba(255, 255, 255, 0.1);;
     width: 100%;
-}
-.Galeria_container:nth-child(1){
-    grid-row-start: span 3;
+    height: 200px;
+    padding: 60px;
+    margin-top: 30px;
+    justify-content: space-between;
+    div{
+        padding: 20px;
+        background: black;
+    }
     
 }
-.Galeria_container:nth-child(2){
-    grid-column-start: span 2;
-    height: 500px; 
+.lonuevo{
+    padding: 25px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+.Container_fotos{
+    justify-content: center;
+    font-family: monospace;
+    margin: 0;
+    padding: 10px;
+    background:black;
+    display: flex;
+    width: 100%;
+    height: auto;
+    div{
+        background: black;
+        margin: 10px;
+        border: 2px solid white;
+        border-radius: 15px;
+    }
+    img{
+        border-bottom: 3px solid white;
+        width: 270px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+}
 
+.descripcion{
+    color: white;
+    text-align:center;
 }
-.Galeria_container:nth-child(3){
-    grid-row-start: span 1;
-}
-.Galeria_container:nth-child(4){
-    grid-row: span 2;
-
-}
-.Galeria_container:nth-child(5){
-    grid-row-start: span 2;
-}
-.Galeria_container:nth-child(8){
-    grid-column-start: span 4;
-    height: 400px;}

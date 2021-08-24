@@ -1,4 +1,13 @@
 @charset "UTF-8";
+dd {
+  color: white; }
+
+h2 {
+  color: white; }
+
+p {
+  color: white; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -77,6 +86,9 @@
 .header_aviso {
   background-color: yellow;
   height: 21px; }
+  .header_aviso p {
+    color: black;
+    font-family: monospace; }
 
 .header_aviso_instagram {
   float: left;
@@ -307,7 +319,11 @@ menu li:hover {
 
 /*pie de pagina*/
 .PiePagina {
-  background: #94A3D1; }
+  font-family: monospace;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid white; }
+  .PiePagina img {
+    margin-left: 10px; }
 
 .PiePagina h2 {
   color: white; }
@@ -322,8 +338,12 @@ menu li:hover {
   width: 80px; }
 
 .PiePagina_Subs_mensaje {
+  color: white;
   float: right;
   transform: translate(-130pX, -75px); }
+
+.email {
+  width: 80%; }
 
 .PiePagina_Subs_mensaje h3 {
   width: 100%; }
@@ -333,9 +353,16 @@ menu li:hover {
   margin: auto; }
 
 /*Seguimiento*/
+.conteiner_ayuda {
+  margin-left: 100px; }
+
 .fuente {
-  font-family: 'Oswald', sans-serif;
+  font-family: monospace;
   font-size: 25px; }
+
+.ejemplo {
+  font-size: 15px;
+  color: grey; }
 
 /*Contacto*/
 .contacto {
@@ -411,6 +438,9 @@ span {
 .iconotwit {
   width: 50px; }
 
+#fondo {
+  background: black; }
+
 .slider_inicio {
   width: 95%;
   margin: auto;
@@ -424,14 +454,13 @@ span {
     animation: cambio 20s infinite alternate; }
   .slider_inicio li {
     border-radius: 10px;
-    border: 2px solid white;
     list-style: none;
     width: 100%;
     background-color: black; }
   .slider_inicio img {
     margin-left: 500px;
     width: auto;
-    heigth: auto;
+    height: auto;
     max-width: 100%;
     max-height: 400px; }
 
@@ -449,51 +478,51 @@ span {
   70% {
     margin-left: -200%; } }
 
-/* Galeria Inicio*/
-.Galeria {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 10px;
-  grid-gap: 10px;
-  justify-content: center;
-  width: 90%;
-  margin: auto; }
-
-.Galeria_container {
-  position: relative; }
-
-.Galeria_container_foto {
+.mensajes {
+  font-family: monospace;
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
   width: 100%;
-  height: 100%;
-  object-fit: cover; }
+  height: 200px;
+  padding: 60px;
+  margin-top: 30px;
+  justify-content: space-between; }
+  .mensajes h3 {
+    color: white; }
+  .mensajes div {
+    padding: 20px;
+    background: black; }
 
-.Galeria_container_titulo {
-  position: absolute;
-  bottom: 0%;
+.lonuevo {
+  padding: 25px;
+  margin: 5px;
+  text-align: center;
   color: white;
-  margin: 0%;
-  background: linear-gradient(rgba(255, 255, 255, 0), black);
-  width: 100%; }
+  font-family: monospace; }
 
-.Galeria_container:nth-child(1) {
-  grid-row-start: span 3; }
+.Container_fotos {
+  justify-content: center;
+  font-family: monospace;
+  margin: 0;
+  padding: 10px;
+  background: black;
+  display: flex;
+  width: 100%;
+  height: auto; }
+  .Container_fotos div {
+    background: black;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 15px; }
+  .Container_fotos img {
+    border-bottom: 3px solid white;
+    width: 270px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; }
 
-.Galeria_container:nth-child(2) {
-  grid-column-start: span 2;
-  height: 500px; }
-
-.Galeria_container:nth-child(3) {
-  grid-row-start: span 1; }
-
-.Galeria_container:nth-child(4) {
-  grid-row: span 2; }
-
-.Galeria_container:nth-child(5) {
-  grid-row-start: span 2; }
-
-.Galeria_container:nth-child(8) {
-  grid-column-start: span 4;
-  height: 400px; }
+.descripcion {
+  color: white;
+  text-align: center; }
 
 /*Ayuda*/
 .fuente2 {
