@@ -5,6 +5,7 @@
     p{
         color: black;
         font-family: monospace;
+        font-size: 15px;
     }
 
 }
@@ -48,6 +49,7 @@ header label:hover{
 }
 .menu{
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     justify-content: center;
 }
@@ -73,20 +75,26 @@ menu li:hover{
 
 .Header_Logo{
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    background-color:red;
-    height: auto;
-    border-bottom: 3px solid black;
+    background-color:black;
+    height: 150px;
+    border-bottom: 3px solid white;
+    div{
+        margin: 10px;
+    }
+    
+}
+.carritoCompra{
+    width: 40px;
 }
 .Header_cont_logo{
     width: 350px;
-    height: auto;
-    margin-left: 15px;
     background-color:black;
 }
 .Header_fotoJano{
     width: 300px;
-    margin: 15px;
 }
 .Header_titulo_janoDecoraciones{
     display: none;
@@ -96,13 +104,14 @@ menu li:hover{
     width: 100%;
 }
 .header_cont_buscador{
-    margin-top: 30px;
-    margin-left: 80px;
-    width: 100%;
+        width: 50%;
+        form{
+        width: 100%;
+        }
         input{
+            width: 100%;
             padding: 10px;
             color: white;
-            width: 50%;
             text-align: left;
             border-radius: 10px;
             border: 2px solid white;

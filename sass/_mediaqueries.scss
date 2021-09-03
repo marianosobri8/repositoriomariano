@@ -1,59 +1,142 @@
 
 /*media queries*/
 @media( max-width: 578px){
-    header label{
-        display: block;
+    .banner{
+        display: none;
     }
-    .menu{
-        position: absolute;
-        width: 100%;
-        background-color: black;
-        margin-left: -100%;   
-    }
-    .menu ul{
-        flex-direction: column;
-    }
-    .menu li{
-        border-top:1px solid black;
-    }
-    #btn-menu:checked ~ .menu{
-        margin-left: 0;
-    }
-
-
-.header_aviso{
-        width: 100%;
-        height: auto;
-        img{
+    .header_aviso{
+        display: flex;
+        justify-content: space-evenly;
+        p{
             display: none;
+        }
+        div{
+            margin: 0;
         }
     }
     .header_cont_buscador{
-        input{
+        width: 80%;
+    }
+    .Header_Logo{
+        height: auto;
+        flex-direction: column;
+    }
+    .Header_cont_logo{
+        width: 100%;
+    }
+    
+    .Header_fotoJano{
+        margin-left: 70px;
+    }
+    
+    .menu{
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .PiePagina{
+        h2{
+            text-align: center;
+        }
+        height: 400px;
+    }
+        .conteiner_redes{
+            justify-content: center;
+            width: 100%;
+            div{
+                    img{
+                        width: 40px;
+                    }
+            }
+    
+        }
+    .PiePagina_Subs_mensaje{
+        form{
             width: 100%;
         }
-        transform: translateY(100px );
+        margin-left:auto;
+        width: 90%;
+        input{
+            width: 90%;
+        }
     }
-
-    .Header_logo{
-        background-color: red;
+    
+    
+    .hola{
+        margin: 20px;
+        border-radius: 5px;
+        background-color: yellow;
+        width: 90%;
+        text-align: center;
     }
-.Header_cont_logo{   
-        height:100%;
-        margin: auto; 
-        width: 2000px;
-        img{
-            width: 100%;
-        }   
+    
+    
+    .mensajesFinales{
+        text-align: center;
     }
-
-
-}
+    
+    .derechosdeautor{
+        width: 100%;
+        background-color: whitesmoke;
+        p{
+            color: black;
+            text-align: center;
+        }
+    }
+    
+    }
 
 
 // Pie de Pagina
 
 @media( max-width: 478px){
+.banner{
+    display: none;
+}
+.header_aviso{
+    display: flex;
+    justify-content: space-evenly;
+    p{
+        display: none;
+    }
+    div{
+        margin: 0;
+    }
+}
+.header_cont_buscador{
+    width: 80%;
+}
+.Header_Logo{
+    height: auto;
+    flex-direction: column;
+}
+.Header_cont_logo{
+    width: 100%;
+}
+
+.Header_fotoJano{
+    margin-left: 70px;
+}
+
+.menu{
+
+}
+
+
+
+
+
+
+
+
+
 .PiePagina{
     h2{
         text-align: center;
