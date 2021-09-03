@@ -22,8 +22,6 @@
     img{
         margin-left: 500px;
         width:auto;
-        height:auto;
-        max-width: 100%;
         max-height: 400px
     }
 }
@@ -69,7 +67,8 @@
     margin: 0;
     padding: 10px;
     background:black;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     width: 100%;
     height: auto;
     div{

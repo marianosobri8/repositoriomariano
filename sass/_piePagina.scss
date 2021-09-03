@@ -1,38 +1,84 @@
 /*pie de pagina*/
 
-
 .PiePagina{
     font-family: monospace;
     background:rgba(255, 255, 255, 0.1);
     border-top: 2px solid white;
-    img{
-        margin-left: 10px;
+    h2{
+        margin: 5px;
+        color: white;
     }
+    h2{
+        text-align: center;
+    }
+    height: 400px;
+}
+    .conteiner_redes{
+        margin-bottom: 15px;
+        justify-content: center;
+        width: 100%;
+        div{
+                img{
+                    width: 40px;
+                }
+        }
 
-}
-.PiePagina h2{
-    color: white;
-}
-
-.PiePagina_icono_facebook2{
-    width: 80px;
-}
-.PiePagina_icono_instagram2{
-    width: 80px;
-}
-.PiePagina_icono_twitter2{
-    width: 80px;
-}
+    }
 .PiePagina_Subs_mensaje{
-    color: white;
-    float: right;
-    transform: translate(-130pX,-75px);
+    form{
+        width: 100%;
+    }
+    margin-left:auto;
+    width: 90%;
+    input{
+        width: 90%;
+    }
+}
+
+
+.hola{
+    h3{
+        padding: 5px;
+        border-radius: 5px;
+        margin-left: auto;
+        color: black;
+        background-color: yellow;
+    }
+    margin: auto;
+    border-radius: 5px;
+    width: 600vm;
+    text-align: center;
+}
+
+
+.mensajesFinales{
+    text-align: center;
+}
+
+.derechosdeautor{
+    width: 100%;
+    background-color: whitesmoke;
+    p{
+        color: black;
+        text-align: center;
+    }
+}
+.conteiner_redes{
+    display: flex;
+    img{
+        width: 80px;
+        height: auto;
+    }
+    div{
+        margin: 5px;
+    }
+}
+
+.PiePagina_Subs_mensaje{
+    color: white;;
 }
 .email{
     width: 80%;
-}
-.PiePagina_Subs_mensaje h3{
-    width: 100%;
 }
 
 
@@ -40,3 +86,16 @@
     width: 50%;
     margin: auto;
 }
+
+// .hola{
+//     margin: auto;
+//     width: 700px;
+//     background-color: yellow;
+//     border-radius: 5px;
+//     h3{
+//     text-align: center;
+//     margin-top: 50px;
+//     color: black;
+//     }
+
+// }

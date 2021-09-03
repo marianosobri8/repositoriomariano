@@ -1,154 +1,161 @@
 
 /*media queries*/
-
-
-@media(max-width:578px){
-    .Galeria{
-        grid-template-columns: 1fr ; 
+@media( max-width: 578px){
+    header label{
+        display: block;
     }
-    .Galeria_container:nth-child(1){
-        width: 500px;
-    }
-    .Galeria_container:nth-child(2){
-        grid-column-start: span 3;
-        width:100%;
-        height: auto; 
-    
-    }
-    .Galeria_container:nth-child(3){
-        grid-row-start: span 2;
-
-    }
-    .Galeria_container:nth-child(4){
-        grid-row: span 2;
-    
-    }
-    .Galeria_container:nth-child(5){
-        grid-row-start: span 1;
-    }
-    .Galeria_container:nth-child(8){
-        grid-column-start: span 3;
-        height: 400px;
-    }
-    .redSocial{
-        background-color: yellow;
-        height: 21px;
+    .menu{
+        position: absolute;
         width: 100%;
+        background-color: black;
+        margin-left: -100%;   
     }
-    .instagram{
-        float: left;
-        width: 20px;
-        margin-right: 1%;
+    .menu ul{
+        flex-direction: column;
     }
-    .twitter{
-        float: left;
-        width: 20px;
-        margin-right: 1%;
+    .menu li{
+        border-top:1px solid black;
     }
-    .facebook{
-        float: left;
-        width: 20px;
+    #btn-menu:checked ~ .menu{
+        margin-left: 0;
     }
-    .promocion{
-    text-align: center;
-    }
-    
-    .fotoJano{
+
+
+.header_aviso{
         width: 100%;
         height: auto;
+        img{
+            display: none;
+        }
     }
-    .suscribete{
-        position: relative;
-        top: 80px;
-        right: 15px;
+    .header_cont_buscador{
+        input{
+            width: 100%;
+        }
+        transform: translateY(100px );
     }
+
+    .Header_logo{
+        background-color: red;
     }
-.facebook2{
-    width: 20px;
+.Header_cont_logo{   
+        height:100%;
+        margin: auto; 
+        width: 2000px;
+        img{
+            width: 100%;
+        }   
+    }
+
+
 }
-.twitter2{
-    width: 10px;
-} 
-@media(min-width:768px){
-    .Galeria{
-        grid-template-columns: repeat(4,1fr);
+
+
+// Pie de Pagina
+
+@media( max-width: 478px){
+.PiePagina{
+    h2{
+        text-align: center;
     }
-    .Galeria_container:nth-child(2){
-        grid-column-start: span 3;
-        height: 500px; 
-    
+    height: 400px;
+}
+    .conteiner_redes{
+        justify-content: center;
+        width: 100%;
+        div{
+                img{
+                    width: 40px;
+                }
+        }
+
     }
-    .Galeria_container:nth-child(3){
-        grid-row-start: span 2;
-    }
-    .Galeria_container:nth-child(4){
-        grid-row: span 2;
-    
-    }
-    .Galeria_container:nth-child(5){
-        grid-row-start: span 1;
-    }
-    .Galeria_container:nth-child(8){
-        grid-column-start: span 3;
-        height: 400px;
-    }
-    .redSocial{
-        background-color: yellow;
-        height: 21px;
+.PiePagina_Subs_mensaje{
+    form{
         width: 100%;
     }
-    .instagram{
-        float: left;
-        width: 20px;
-        margin-right: 1%;
+    margin-left:auto;
+    width: 90%;
+    input{
+        width: 90%;
     }
-    .twitter{
-        float: left;
-        width: 20px;
-        margin-right: 1%;
-    }
-    .facebook{
-        float: left;
-        width: 20px;
-    }
-    .promocion{
+}
+
+
+.hola{
+    margin: 20px;
+    border-radius: 5px;
+    background-color: yellow;
+    width: 90%;
     text-align: center;
+}
+
+
+.mensajesFinales{
+    text-align: center;
+}
+
+.derechosdeautor{
+    width: 100%;
+    background-color: whitesmoke;
+    p{
+        color: black;
+        text-align: center;
     }
-    
-    
-    .janoVerde{
-        display: none;
-    }
+}
 
 }
 
-@media(min-width:1024px){
-    .Galeria{
-        grid-template-columns: repeat(4,1fr);
-        width: 90%;
-        margin: auto;
-    }
-    .Galeria_container:nth-child(1){
-        grid-row-start: span 3;
-        
-    }
-    .Galeria_container:nth-child(2){
-        grid-column-start: span 2;
-        height: 500px; 
-    
-    }
-    .Galeria_container:nth-child(3){
-        grid-row-start: span 1;
-    }
-    .Galeria_container:nth-child(4){
-        grid-row: span 2;
-    
-    }
-    .Galeria_container:nth-child(5){
-        grid-row-start: span 2;
-    }
-    .Galeria_containerm:nth-child(8){
-        grid-column-start: span 4;
+@media (max-width: 800px){
+    .PiePagina{
+        h2{
+            text-align: center;
+        }
         height: 400px;
     }
+        .conteiner_redes{
+            justify-content: center;
+            width: 100%;
+            div{
+                    img{
+                        width: 40px;
+                    }
+            }
+    
+        }
+    .PiePagina_Subs_mensaje{
+        form{
+            width: 100%;
+        }
+        margin-left:auto;
+        width: 90%;
+        input{
+            width: 90%;
+        }
+    }
+    
+    
+    .hola{
+        margin: 20px;
+        border-radius: 5px;
+        background-color: yellow;
+        width: 90%;
+        text-align: center;
+    }
+    
+    
+    .mensajesFinales{
+        text-align: center;
+    }
+    
+    .derechosdeautor{
+        width: 100%;
+        background-color: whitesmoke;
+        p{
+            color: black;
+            text-align: center;
+        }
+    }
+    
 }
+

@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
+    <!-- LOGO Y BUSCADOR Y CARRITO DE COMPRAS-->
 <body id="fondo">
     <header>
         <div class="header_aviso">
@@ -30,8 +31,35 @@
             </form>
         </div>
     </div>
-    <div class="Header_navbar">
-    <nav class="menu" >
+
+    <!-- Barra de navegacion -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- enlaces -->
+            <div class="collapse navbar-collapse" id="opciones">   
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> Inicio</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pages/Tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pages/Seguimiento.html">Seguimiento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pages/Ayuda.html">Ayuda </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pages/Contacto.html">Contacto</a>
+                </li>              
+                </ul>
+            </div>
+        </nav>
+    <!-- <nav class="menu" >
         <div>
         <ul>
             <li><a class="navbar-brand" href="Index.html">Inicio</a></li>
@@ -41,8 +69,7 @@
             <li><a class="navbar-brand" href="Pages/Contacto.html">Contacto</a></li>
         </ul>
         </div>
-    </nav>
-    </div>
+        </nav>  -->
     </header>
 
     <div class="slider_inicio">
@@ -110,34 +137,51 @@
 
     <br><br><br><br><br>
     <footer>
-        <section >
-            <div class="PiePagina">
-                <h2>Visita Nuestras Redes</h2>
+        <div class="PiePagina">
+            <h2>Visita Nuestras Redes</h2>
+            <div class="conteiner_redes" >
                 <br>
+                <div>
                 <img src="imagenes/facebookicono2 (2).png" class="PiePagina_icono_facebook2"><!--Aca van los iconos de las redes sociales-->
+                </div>
+                <div>
                 <img src="Imagenes/twittericono2.png" class="PiePagina_icono_twitter2"><!--Aca van los iconos de las redes sociales-->
+                </div>
+                <div>
                 <img src="Imagenes/instragramicono2.png"class="PiePagina_icono_instagram2"><!--Aca van los iconos de las redes sociales-->
+                </div>
                 <br>
+            </div>
+                <div class="hola">
+                <h3 >Subscribite para recibir novedades!</h3>
+                </div>
                 <div class="PiePagina_Subs_mensaje">
-                    <h3 class="hola">Subscribite para recibir novedades!</h3>
                     <form action="Procesar.php"method="post"enctype=""></form>
-                    <input type="email"name="Correo" placeholder="Ingrese tu Correo Electronico" class="email">
+                    <input type="email"name="Correo" placeholder="Ingrese tu Correo Electronico"><br>
                     <input type="submit" value="Enviar">
                 </div>
                 <br><br><br>
-                <div>
+                <div class="mensajesFinales">
                     <a href="Quienes Somos">Quienes Somos</a>
                     <a href="Preguntas Frecuentes">Preguntas Frecuentes</a>
                     <a href="Ayuda">Ayuda</a>
                 </div>
-            </div>
-        </section>        
+                <br>
+                <div class="derechosdeautor">
+                    <p> ®2021 JANODEC- Todos los derechos reservados</p>
+
+
+                </div>
+        </div>        
     </footer>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
