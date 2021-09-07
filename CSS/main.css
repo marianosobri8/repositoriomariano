@@ -192,57 +192,10 @@ menu li:hover {
   margin: 0%; }
 
 /*media queries*/
-@media (max-width: 578px) {
-  .banner {
-    display: none; }
-  .header_aviso {
-    display: flex;
-    justify-content: space-evenly; }
-    .header_aviso p {
-      display: none; }
-    .header_aviso div {
-      margin: 0; }
-  .header_cont_buscador {
-    width: 80%; }
-  .Header_Logo {
-    height: auto;
-    flex-direction: column; }
-  .Header_cont_logo {
-    width: 100%; }
-  .Header_fotoJano {
-    margin-left: 70px; }
-  .PiePagina {
-    height: 400px; }
-    .PiePagina h2 {
-      text-align: center; }
-  .conteiner_redes {
-    justify-content: center;
-    width: 100%; }
-    .conteiner_redes div img {
-      width: 40px; }
-  .PiePagina_Subs_mensaje {
-    margin-left: auto;
-    width: 90%; }
-    .PiePagina_Subs_mensaje form {
-      width: 100%; }
-    .PiePagina_Subs_mensaje input {
-      width: 90%; }
-  .hola {
-    margin: 20px;
-    border-radius: 5px;
-    background-color: yellow;
-    width: 90%;
-    text-align: center; }
-  .mensajesFinales {
-    text-align: center; }
-  .derechosdeautor {
+@media (max-width: 580px) {
+  .mensajes div {
     width: 100%;
-    background-color: whitesmoke; }
-    .derechosdeautor p {
-      color: black;
-      text-align: center; } }
-
-@media (max-width: 478px) {
+    margin: 10px; }
   .banner {
     display: none; }
   .header_aviso {
@@ -260,7 +213,7 @@ menu li:hover {
   .Header_cont_logo {
     width: 100%; }
   .Header_fotoJano {
-    margin-left: 70px; }
+    margin-left: 100px; }
   .PiePagina {
     height: 400px; }
     .PiePagina h2 {
@@ -293,6 +246,27 @@ menu li:hover {
       text-align: center; } }
 
 @media (max-width: 800px) {
+  .mensajes div {
+    width: 100%;
+    margin: 10px; }
+  .banner {
+    display: none; }
+  .header_aviso {
+    display: flex;
+    justify-content: space-evenly; }
+    .header_aviso p {
+      display: none; }
+    .header_aviso div {
+      margin: 0; }
+  .header_cont_buscador {
+    width: 80%; }
+  .Header_Logo {
+    height: auto;
+    flex-direction: column; }
+  .Header_cont_logo {
+    width: 100%; }
+  .Header_fotoJano {
+    margin-left: 100px; }
   .PiePagina {
     height: 400px; }
     .PiePagina h2 {
@@ -480,55 +454,24 @@ span {
 #fondo {
   background: black; }
 
-.slider_inicio {
-  width: 95%;
-  margin: auto;
-  overflow: hidden;
-  height: 400px;
-  object-fit: cover; }
-  .slider_inicio ul {
-    display: flex;
-    padding: 0;
-    width: 300%;
-    animation: cambio 20s infinite alternate; }
-  .slider_inicio li {
-    border-radius: 10px;
-    list-style: none;
-    width: 100%;
-    background-color: black; }
-  .slider_inicio img {
-    margin-left: 500px;
-    width: auto;
-    max-height: 400px; }
-
-@keyframes cambio {
-  0% {
-    margin-left: 0; }
-  20% {
-    margin-left: 0; }
-  25% {
-    margin-left: -100%; }
-  45% {
-    margin-left: -100%; }
-  50% {
-    margin-left: -200%; }
-  70% {
-    margin-left: -200%; } }
-
 .mensajes {
-  font-family: monospace;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   background: rgba(255, 255, 255, 0.1);
   width: 100%;
-  height: 200px;
-  padding: 60px;
-  margin-top: 30px;
+  height: 100%;
+  margin-top: 5px;
+  padding: 30px;
   justify-content: space-between; }
-  .mensajes h3 {
-    color: white; }
   .mensajes div {
+    border: 1px solid white;
     padding: 20px;
     background: black; }
+  .mensajes h3 {
+    font-family: monospace;
+    color: white;
+    width: 100%; }
 
 .lonuevo {
   padding: 25px;
