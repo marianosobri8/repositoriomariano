@@ -18,64 +18,39 @@ p {
   width: 998px;
   height: 174px; }
 
-.secciones {
-  text-align: center; }
+.contenedor_tienda {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto); }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: whitesmoke;
-  padding: 10px;
-  justify-content: center; }
+.contenedor_tienda > div
+.contenedor_tienda .productos
+.contenedor_tienda .filtro
+.contenedor_tienda .categorias {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px; }
 
-.flex-container div {
-  background-color: white;
-  border: 1px solid black;
-  margin: 10px; }
+.contenedor_tienda .categorias {
+  color: whitesmoke;
+  background: rgba(230, 230, 230, 0.3); }
+  .contenedor_tienda .categorias ul {
+    list-style: none;
+    font-family: monospace; }
+    .contenedor_tienda .categorias ul dd {
+      font-weight: bold; }
+    .contenedor_tienda .categorias ul li a {
+      color: whitesmoke; }
 
 .producto1 {
-  width: 300px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  display: block; }
+  width: 300px; }
 
 .cuadro1 {
   border: 5px solid black; }
-
-#tiendaCategorias {
-  background-color: black; }
-
-#tiendaCategorias ul {
-  list-style: none;
-  margin: 0;
-  padding: 0%; }
-
-#tiendaCategorias ul li {
-  display: inline-block; }
-
-#tiendaCategorias ul li a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 20px 70px; }
-
-#tiendaCategorias ul li a:hover {
-  background-color: teal; }
-
-.carritoTienda {
-  width: 25px;
-  position: relative;
-  left: 40px; }
-
-.finalizarCompra {
-  float: right;
-  margin-right: 50px;
-  position: relative;
-  bottom: 40px; }
-
-.filtro {
-  background-color: whitesmoke; }
 
 /*header (INICIO)de mensaje con promociones del dia, Mi idea es que las redes sociales queden con un tamaño chico en el borde superior izquierdo , para un facil acceso a las mismas , y que el mensaje de promocion este centrado , es un mensaje que constantemente va cambiando dependiendo el dia y dependiendo la promocion*/
 .header_aviso {
@@ -193,6 +168,8 @@ menu li:hover {
 
 /*media queries*/
 @media (max-width: 580px) {
+  .Container_fotos {
+    grid-columns: auto auto; }
   .mensajes div {
     width: 100%;
     margin: 10px; }
@@ -243,7 +220,19 @@ menu li:hover {
     background-color: whitesmoke; }
     .derechosdeautor p {
       color: black;
-      text-align: center; } }
+      text-align: center; }
+  .contacto {
+    width: 100%; }
+  .formulario {
+    width: 100%; }
+  .listaContacto {
+    width: 100%; }
+  .contenedor_seguimiento {
+    padding: 10px; }
+  .seguimiento_oca {
+    font-size: 15px; }
+  .seguimiento_jano {
+    font-size: 15px; } }
 
 @media (max-width: 800px) {
   .mensajes div {
@@ -366,31 +355,52 @@ menu li:hover {
   margin: auto; }
 
 /*Seguimiento*/
-.conteiner_ayuda {
-  margin-left: 100px; }
-
-.fuente {
+.contenedor_seguimiento {
+  text-align: center;
   font-family: monospace;
   font-size: 25px; }
+  .contenedor_seguimiento div {
+    margin-top: 20px; }
+
+.seguimiento_oca {
+  border-bottom: 1px solid white; }
+
+.seguimiento_jano {
+  border-bottom: 1px solid black; }
 
 .ejemplo {
   font-size: 15px;
   color: grey; }
 
 /*Contacto*/
+.mensaje_contacto {
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid white; }
+  .mensaje_contacto p {
+    text-align: center;
+    font-family: monospace;
+    color: white; }
+
 .contacto {
-  background-color: green;
-  color: white; }
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  justify-items: center; }
 
 .formulario {
   font-family: monospace;
-  background-color: #35757D;
+  background-color: black;
+  border: 1px solid white;
   width: 450px;
   margin: 10px;
   padding: 10px 20px;
   box-sizing: border-box;
   border-radius: 7px; }
+  .formulario label {
+    color: white; }
   .formulario H2 {
+    border: 1px solid white;
     color: white;
     text-align: center;
     margin: 0;
@@ -411,23 +421,18 @@ menu li:hover {
 .botonreset {
   background: whitesmoke; }
 
-@media (max-width: 480px) {
-  .formulario {
-    width: 100%;
-    margin: 0; }
-  .listaContacto {
-    width: 100%;
-    margin: 0; } }
-
 .listaContacto {
   font-family: monospace;
   width: 450px;
-  margin: 10px;
   padding: 10px 20px;
   border-radius: 7px;
-  background-color: #94A3D1; }
+  background-color: white; }
   .listaContacto dd {
-    text-align: center; }
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black; }
   .listaContacto li {
     color: black;
     width: 100%; }
@@ -465,10 +470,12 @@ span {
   padding: 30px;
   justify-content: space-between; }
   .mensajes div {
+    border-radius: 7px;
     border: 1px solid white;
     padding: 20px;
     background: black; }
   .mensajes h3 {
+    text-align: center;
     font-family: monospace;
     color: white;
     width: 100%; }
@@ -506,17 +513,48 @@ span {
   text-align: center; }
 
 /*Ayuda*/
-.fuente2 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 20px; }
-
-.containerAyuda {
+.contenedor_ayuda {
+  padding: 10px;
+  margin: 5px;
+  font-family: monospace;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .contenedor_ayuda div {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px; }
+
+.listaAyuda h5 {
+  color: white; }
+
+.listaAyuda ul {
+  list-style: none; }
+  .listaAyuda ul li {
+    margin: 10%; }
+
+.listaAyuda2 {
+  background-color: white; }
+  .listaAyuda2 dd {
+    color: black;
+    font-weight: bold;
+    text-align: center; }
+  .listaAyuda2 ul {
+    list-style: none; }
+    .listaAyuda2 ul li {
+      margin: 5%; }
+    .listaAyuda2 ul a {
+      color: black; }
+
+.mensajes_ayuda {
+  border-top: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
   color: white;
   padding: 10px;
   justify-content: space-around; }
 
-.containerAyuda div {
+.mensajes_ayuda div {
   background-color: black;
   padding: 15px;
   margin: 10px;

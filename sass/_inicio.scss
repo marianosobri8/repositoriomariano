@@ -4,7 +4,6 @@
 
 
 .mensajes{
-
     display:flex;
     flex-wrap: wrap;
     align-items: center;
@@ -15,11 +14,13 @@
     padding: 30px;
     justify-content: space-between;
     div{
+        border-radius: 7px;
         border: 1px solid white;
         padding: 20px;
         background: black;
     }
     h3{
+        text-align: center;
         font-family: monospace;
         color:white;
         width: 100%;

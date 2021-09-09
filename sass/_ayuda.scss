@@ -1,16 +1,65 @@
 /*Ayuda*/
 
-.fuente2{
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-}
-.containerAyuda{
+.contenedor_ayuda{
+    padding: 10px;
+    margin: 5px;
+    font-family: monospace;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    div{
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+}
+
+.listaAyuda{
+    h5{
+        color: white;
+    }
+    ul{
+        list-style: none;
+        li{
+            margin: 10%;
+        }
+    }
+}
+
+.listaAyuda2{
+    background-color: white;
+    dd{
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+    ul{
+        list-style: none;
+        li{
+            margin: 5%;
+        }
+        a{
+            color: black;
+        }
+    }
+}
+
+
+
+
+
+
+.mensajes_ayuda{
+    border-top: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
     color: white;
     padding: 10px;
     justify-content: space-around;
 }
-.containerAyuda div{
+.mensajes_ayuda div{
     background-color: black;
     padding: 15px;
     margin: 10px;

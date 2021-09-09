@@ -1,11 +1,19 @@
 /*Seguimiento*/
 
-.conteiner_ayuda{
-    margin-left: 100px;
-}
-.fuente{
+.contenedor_seguimiento{
+    text-align: center;
     font-family: monospace;
     font-size: 25px;
+    div{
+        margin-top: 20px;
+    }
+}
+
+.seguimiento_oca{
+    border-bottom: 1px solid white;
+}
+.seguimiento_jano{
+    border-bottom: 1px solid black;
 }
 .ejemplo{
     font-size: 15px;

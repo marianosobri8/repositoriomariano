@@ -2,6 +2,11 @@
 /*media queries*/
 @media( max-width: 580px){
 
+.Container_fotos{
+    grid-columns: auto auto;
+}
+
+
     .mensajes{
         div{
             width: 100%;
@@ -89,8 +94,33 @@
             }
         }
         
+// Seccion Contactos
+
+        .contacto{
+            width: 100%;
+        }
+        .formulario{
+            width: 100%;
+        }
+        .listaContacto{
+            width: 100%;
         }
 
+// Seccion Seguimiento
+        .contenedor_seguimiento{
+            padding: 10px;
+        }
+
+        .seguimiento_oca{
+            font-size: 15px;
+        }
+
+        .seguimiento_jano{
+            font-size: 15px;
+        }
+
+
+        }
 
 
 @media (max-width: 800px){

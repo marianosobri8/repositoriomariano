@@ -38,60 +38,81 @@
             </div>
         </div>
     <div class="Header_navbar">
-    <nav class="menu" >
-        <div>
-        <ul>
-            <li><a class="navbar-brand" href="../index.html">Inicio</a></li>
-            <li><a class="navbar-brand"href="Tienda.html">Tienda</a></li>
-            <li><a class="navbar-brand"href="Seguimiento.html">Seguimiento</a></li>
-            <li><a class="navbar-brand" href="Ayuda.html">Ayuda</a></li>
-            <li><a class="navbar-brand" href="Contacto.html">Contacto</a></li>
-        </ul>
-        </div>
-    </nav>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- enlaces -->
+            <div class="collapse navbar-collapse" id="opciones">   
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"> Inicio</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Seguimiento.html">Seguimiento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Ayuda.html">Ayuda </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                </li>              
+                </ul>
+            </div>
+        </nav>
+    </div>
     </div>
     </header>
         <br>
-        <p class="contacto">Nos encanta saber de vos , ya sea por una queja o una consulta.Esperamos tu contacto ahora.</p><!--Un parrafo que acompaña al titulo-->
+        <div  class="mensaje_contacto">
+        <p>Nos encanta saber de vos , ya sea por una queja o una consulta.Esperamos tu contacto ahora.</p><!--Un parrafo que acompaña al titulo-->
+        </div>
         <br>
-    <div class="listaContacto">
-        <dd>Contacto Jano Decoraciones</dd>
-            <ul>
-                <li><span class="telefono">Telefono:</span>223XXXXX</li>
-                <li><span class="email">Email:</span>JanoDecoraciones@gmail.com</li>
-                <li><span class="Mayorista">Email Mayorista:</span>JanoMayorista@gmail.com</li>
-                <li><span class="Tel Mayor">Telefono Mayorista:</span>223XXXXX</li>
-                <div class="redes">
-                    <div>
-                        <img src="../Imagenes/instragramicono.png" alt="instragram" class="iconoinst">
+<!-- FORMULARIO DE CONTACTO -->
+    <div class="contacto">
+        <div class="listaContacto">
+            <dd>CONTACTO JANODEC</dd>
+                <ul>
+                    <li><span class="telefono">Telefono:</span>223XXXXX</li>
+                    <li><span class="email">Email:</span>JanoDecoraciones@gmail.com</li>
+                    <li><span class="Mayorista">Email Mayorista:</span>JanoMayorista@gmail.com</li>
+                    <li><span class="Tel Mayor">Telefono Mayorista:</span>223XXXXX</li>
+                    <div class="redes">
+                        <div>
+                            <img src="../Imagenes/instragramicono.png" alt="instragram" class="iconoinst">
+                        </div>
+                        <div>
+                            <img src="../Imagenes/facebookicono.png" alt="facebook" class="iconoface">
+                        </div>
+                        <div>
+                            <img src="../Imagenes/twittericono.png" alt="twitter" class="iconotwit">
+                        </div>
                     </div>
-                    <div>
-                        <img src="../Imagenes/facebookicono.png" alt="facebook" class="iconoface">
-                    </div>
-                    <div>
-                        <img src="../Imagenes/twittericono.png" alt="twitter" class="iconotwit">
-                    </div>
-                </div>
-            </ul>
-    </div>
-    <div class="formulario"><!--Formulario-->
-        <h2>CONTACTO</h2>
-        <form action="Procesar.php"method="post"enctype="">
-            <label for="Nombre">Nombre:</label>
-                <input type="text" name="Tu nombre" id="Nombre"placeholder="Introduce tu Nombre">
-            <label for="Apellido">Apellido:</label>
-                <input type="text" name=" Tu Apellido" id="Apellido" placeholder="Introduce tu apellido" >
-            <label for="mail">Correo Electronico:</label>
-                <input type="email" id="mail" name="Tu correo" placeholder="Introduce tu Correo">
-            <label for="Telefono">Telefono</label>
-                <input type="number" name="Tu telefono" id="Telefono" placeholder="Introduce tu Telefono">
-            <label for="Asunto">Asunto</label>
-                <input type="text" name="Asunto" id="Asunto" placeholder="Introduce un asunto">
-            <label for="Textarea">Mensaje</label>
-                <textarea name="Mensaje" id="Textarea" cols="30" rows="10" placeholder="Introduce tu mensaje"></textarea>
-                <input type="submit" value="Enviar" class="boton">
-                <input type="reset" value="Reset" id="reset" class="botonreset">
-        </form> 
+                </ul>
+        </div>
+        <div class="formulario"><!--Formulario-->
+            <h2>CONTACTO</h2>
+            <form action="Procesar.php"method="post"enctype="">
+                <label for="Nombre">Nombre:</label>
+                    <input type="text" name="Tu nombre" id="Nombre"placeholder="Introduce tu Nombre">
+                <label for="Apellido">Apellido:</label>
+                    <input type="text" name=" Tu Apellido" id="Apellido" placeholder="Introduce tu apellido" >
+                <label for="mail">Correo Electronico:</label>
+                    <input type="email" id="mail" name="Tu correo" placeholder="Introduce tu Correo">
+                <label for="Telefono">Telefono</label>
+                    <input type="number" name="Tu telefono" id="Telefono" placeholder="Introduce tu Telefono">
+                <label for="Asunto">Asunto</label>
+                    <input type="text" name="Asunto" id="Asunto" placeholder="Introduce un asunto">
+                <label for="Textarea">Mensaje</label>
+                    <textarea name="Mensaje" id="Textarea" cols="30" rows="10" placeholder="Introduce tu mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="boton">
+                    <input type="reset" value="Reset" id="reset" class="botonreset">
+            </form> 
+        </div>
     </div>
     <footer>
         <div class="PiePagina">
@@ -131,7 +152,9 @@
                 </div>
         </div>        
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
