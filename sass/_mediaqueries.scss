@@ -93,6 +93,7 @@
                 text-align: center;
             }
         }
+
         
 // Seccion Contactos
 
@@ -120,9 +121,35 @@
         }
 
 
-        }
 
+/* CONTENEDOR TIENDA */
+.contenedor_tienda{
+    grid-template-columns: auto auto;
+}
+  /* categorias */
+.contenedor_tienda .categorias{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.contenedor_tienda .categorias li{
+    display: inline;
+}
+  /* filtro */
+.contenedor_tienda .filtro{
+    grid-column-start: 1;
+    grid-column-end:-1 ;
+}
+.contenedor_tienda .filtro input{
+    width: 100%;
+}
 
+/* Productos */
+.producto1{
+width: 100%;
+}
+}
 @media (max-width: 800px){
 
     .mensajes{
