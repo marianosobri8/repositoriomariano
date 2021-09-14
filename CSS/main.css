@@ -860,6 +860,8 @@ span {
   grid-column-end: -1;
   display: flex;
   justify-content: center; }
+  .inicio_redes img {
+    margin: 20px; }
 
 .mensajefinal {
   color: white; }
