@@ -13,51 +13,81 @@
 
 }
 
-.contenedor_tienda{
-    width: 90%;
-    max-width: 1000px;
+.contenedor_tienda {
+    width: 100%;
     margin: 20px auto;
+    max-width: 1000px; 
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto); 
+    div{
+    border-radius: 5px;
+    }
 }
-
-.contenedor_tienda > div
-.contenedor_tienda .productos
-.contenedor_tienda .filtro
-.contenedor_tienda .categorias{
-    background: #fff;
+    .categorias {
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 4px;
-}
-
-.contenedor_tienda .categorias{
-    ul{
-        dd{
-            font-weight: bold ;
-        }
+    grid-row-start: 2;
+    grid-row-end: -1;
+    color: whitesmoke;
+    background: black;
+    ul {
+        padding: 10px;
         list-style: none;
-        font-family: monospace;
+        font-family: monospace; 
+        dd {
+        font-weight: bold; }
+        }
         li{
-            a{
-            color: whitesmoke; 
-            }
+            margin: 20px;
         }
     }
-    color: whitesmoke;
-    background: rgba(230, 230, 230, 0.3);   ;
+    .contenedor_tienda .categorias ul li a {
+        color: whitesmoke;
+    }
+
+    .contenedor_tienda .filtro{
+    grid-column-start: 3;
+    grid-column-end: -1;
+    input{
+        width: 100%;
+        border-radius: 4px;
+        background-color: black;
+    }
 }
 
-
-
-
-
-
-
-
-
-
+// Productos
+.Productos{
+    font-family: monospace;
+    border: 1px solid white;
+    h2{
+        border-top: 3px solid white;
+        text-align: center;
+        font-size: 100%;
+        padding: 5px;
+        color: whitesmoke;
+    }
+    label{
+        color: whitesmoke;
+        padding: 5px;
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+        color:white;
+    }
+}
+#Cantidades{
+    background-color: black;
+    border: 1px solid white;
+    width:15%;
+}
+.añadirCarrito{ 
+    margin-top: 10px;
+    width: 100%;
+}
 
 .producto1{
     width: 300px;
@@ -67,6 +97,5 @@
 .cuadro1{
     border: 5px solid black;
 }
-
 
 

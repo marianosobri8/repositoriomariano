@@ -26,38 +26,129 @@
         width: 100%;
     }
 }
-.lonuevo{
-    padding: 25px;
-    margin: 5px;
+// .lonuevo{
+//     padding: 25px;
+//     margin: 5px;
+//     text-align: center;
+//     color: white;
+//     font-family: monospace;
+// }
+// .Container_fotos{
+//     justify-content: center;
+//     font-family: monospace;
+//     margin: 0;
+//     padding: 10px;
+//     background:black;
+//     display: grid;
+//     grid-template-columns: auto auto auto;
+//     width: 100%;
+//     height: auto;
+//     div{
+//         background: black;
+//         margin: 10px;
+//         border: 2px solid white;
+//         border-radius: 15px;
+//     }
+//     img{
+//         border-bottom: 3px solid white;
+//         width: 270px;
+//         border-top-right-radius: 10px;
+//         border-top-left-radius: 10px;
+//     }
+// }
+
+// .descripcion{
+//     color: white;
+//     text-align:center;
+// }
+
+.contenedor_inicio{
+    margin: 20px;
+    padding:10px;
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto auto auto auto;
+
+}
+.somosJano{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: monospace;
+    padding:10px;
     text-align: center;
+    background-color: black;
+    height: auto;
+    h2{
+        font-weight: bold;
+    }
+    p{
+        font-size: 100%
+    }
+}
+.nuestrascreaciones_titulo{
+    margin-top: 20px;
+    text-decoration: underline;
+    font-weight: bold;
     color: white;
     font-family: monospace;
-}
-.Container_fotos{
-    justify-content: center;
-    font-family: monospace;
-    margin: 0;
-    padding: 10px;
-    background:black;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    text-align: center;
     width: 100%;
     height: auto;
-    div{
-        background: black;
-        margin: 10px;
-        border: 2px solid white;
-        border-radius: 15px;
-    }
+    grid-column-start:1;
+    grid-column-end: -1;
+}
+.inicio_nuestrascreaciones{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     img{
-        border-bottom: 3px solid white;
-        width: 270px;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
+        margin: 10px;
+    }
+}
+.nuestras_redes{
+    margin-top: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: -1 ;
+}
+.inicio_redes{
+    grid-column-start:1 ;
+    grid-column-end: -1 ;
+    display: flex;
+    justify-content: center;
+}
+
+.mensajefinal{
+    color: white;
+}
+
+.inicio_fotoLogo{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    img{
+        width: 100%;
+        height: 80%;
+        border-radius: 800px;
     }
 }
 
-.descripcion{
-    color: white;
-    text-align:center;
+.productos_inicio{
+    border: 5px solid white;
+    width: 300px;
+}
+
+.fotos_inicio_redes{
+    width: 150px ;
 }

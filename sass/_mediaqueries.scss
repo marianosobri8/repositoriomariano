@@ -1,11 +1,218 @@
 
 /*media queries*/
-@media( max-width: 580px){
+@media ( max-width: 320px){
 
-.Container_fotos{
-    grid-columns: auto auto;
-}
 
+    // Inicio 
+        .somosJano{
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+        .inicio_fotoLogo{
+            grid-column-start: 1;
+            grid-column-end: -1;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .inicio_redes{
+            img{
+                width: 20%;
+                margin: 10px;
+            }
+        }
+        .inicio_nuestrascreaciones{
+            img{
+                width: 50%;
+            }
+        }
+    
+        .mensajes{
+            div{
+                width: 100%;
+                margin: 10px;
+            }
+            }
+        
+            .banner{
+                display: none;
+            }
+            .header_aviso{
+                display: flex;
+                justify-content: space-evenly;
+                p{
+                    display: none;
+                }
+                div{
+                    margin: 0;
+                }
+            }
+            .header_cont_buscador{
+                width: 80%;
+            }
+            .Header_Logo{
+                height: auto;
+                flex-direction: column;
+            }
+            .Header_cont_logo{
+                width: 100%;
+            }
+            
+            
+        
+            
+            .PiePagina{
+                h2{
+                    text-align: center;
+                }
+                height: 400px;
+            }
+                .conteiner_redes{
+                    justify-content: center;
+                    width: 100%;
+                    div{
+                            img{
+                                width: 40px;
+                            }
+                    }
+            
+                }
+            .PiePagina_Subs_mensaje{
+                form{
+                    width: 100%;
+                }
+                margin-left:auto;
+                width: 90%;
+                input{
+                    width: 90%;
+                }
+            }
+            
+            
+            .hola{
+                margin: 20px;
+                border-radius: 5px;
+                background-color: yellow;
+                width: 90%;
+                text-align: center;
+            }
+            
+            
+            .mensajesFinales{
+                text-align: center;
+            }
+            
+            .derechosdeautor{
+                width: 100%;
+                background-color: whitesmoke;
+                p{
+                    color: black;
+                    text-align: center;
+                }
+            }
+    
+            
+    // Seccion Contactos
+    
+            .contacto{
+                width: 100%;
+            }
+            .formulario{
+                width: 100%;
+            }
+            .listaContacto{
+                width: 100%;
+            }
+    
+    // Seccion Seguimiento
+            .contenedor_seguimiento{
+                padding: 10px;
+            }
+    
+            .seguimiento_oca{
+                font-size: 15px;
+            }
+    
+            .seguimiento_jano{
+                font-size: 15px;
+            }
+    
+    
+    
+    /* CONTENEDOR TIENDA */
+    .contenedor_tienda{
+        padding:0;
+        grid-template-columns: auto ;
+    }
+      /* categorias */
+    .contenedor_tienda .categorias{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .contenedor_tienda .categorias li{
+        display: inline;
+    }
+      /* filtro */
+    .contenedor_tienda .filtro{
+        grid-column-start: 1;
+        grid-column-end:-1 ;
+    }
+    .contenedor_tienda .filtro input{
+        width: 100%;
+    }
+    
+    /* Productos */
+    .producto1{
+    width: 100%;
+    }
+    
+    .Productos{
+        h2{
+            font-size: 90%;
+            height: auto;
+            width: 100%;
+            color: whitesmoke;
+        }
+        span{
+            margin: 10px;
+        }
+    }
+    #Cantidades{
+        width: 60%;
+    }
+    
+    
+    
+    }
+
+
+
+@media ( max-width: 580px){
+
+
+// Inicio 
+    .somosJano{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    .inicio_fotoLogo{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .inicio_redes{
+        img{
+            width: 20%;
+            margin: 10px;
+        }
+    }
+    .inicio_nuestrascreaciones{
+        img{
+            width: 50%;
+        }
+    }
 
     .mensajes{
         div{
@@ -38,9 +245,6 @@
             width: 100%;
         }
         
-        .Header_fotoJano{
-            margin-left: 100px;
-        }
         
     
         
@@ -124,6 +328,7 @@
 
 /* CONTENEDOR TIENDA */
 .contenedor_tienda{
+    padding:10px;
     grid-template-columns: auto auto;
 }
   /* categorias */
@@ -149,6 +354,24 @@
 .producto1{
 width: 100%;
 }
+
+.Productos{
+    h2{
+        font-size: 90%;
+        height: auto;
+        width: 100%;
+        color: whitesmoke;
+    }
+    span{
+        margin: 10px;
+    }
+}
+#Cantidades{
+    width: 100%;
+}
+
+
+
 }
 @media (max-width: 800px){
 
@@ -181,10 +404,9 @@ width: 100%;
         }
         .Header_cont_logo{
             width: 100%;
-        }
-        
-        .Header_fotoJano{
-            margin-left: 100px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
         
     
@@ -238,6 +460,272 @@ width: 100%;
                 text-align: center;
             }
         }
-        
+        /* CONTENEDOR TIENDA */
+.contenedor_tienda{
+    padding:10px;
+    grid-template-columns: auto auto;
+}
+  /* categorias */
+.contenedor_tienda .categorias{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.contenedor_tienda .categorias li{
+    display: inline;
+}
+  /* filtro */
+.contenedor_tienda .filtro{
+    grid-column-start: 1;
+    grid-column-end:-1 ;
+}
+.contenedor_tienda .filtro input{
+    width: 100%;
+}
+
+/* Productos */
+.producto1{
+width: 100%;
+}
+.Productos{
+    width: 90%;
+    h2{
+        font-size: 90%;
+        height: auto;
+        width: 100%;
+        color: whitesmoke;
+    }
+    span{
+        margin: 10px;
+    }
+}
+#Cantidades{
+    width: 100%;
+}
+}
+
+@media (max-width: 1024px){
+
+            .mensajes{
+                div{
+                    width: 100%;
+                    margin: 10px;
+                }
+                }
+            
+                .banner{
+                    display: none;
+                }
+                .header_aviso{
+                    display: flex;
+                    justify-content: space-evenly;
+                    p{
+                        display: none;
+                    }
+                    div{
+                        margin: 0;
+                    }
+                }
+                .header_cont_buscador{
+                    width: 80%;
+                }
+                .Header_Logo{
+                    height: auto;
+                    flex-direction: column;
+                }
+                .Header_cont_logo{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
+                
+            
+                
+                .PiePagina{
+                    h2{
+                        text-align: center;
+                    }
+                    height: 400px;
+                }
+                    .conteiner_redes{
+                        justify-content: center;
+                        width: 100%;
+                        div{
+                                img{
+                                    width: 40px;
+                                }
+                        }
+                
+                    }
+                .PiePagina_Subs_mensaje{
+                    form{
+                        width: 100%;
+                    }
+                    margin-left:auto;
+                    width: 90%;
+                    input{
+                        width: 90%;
+                    }
+                }
+                
+                
+                .hola{
+                    margin: 20px;
+                    border-radius: 5px;
+                    background-color: yellow;
+                    width: 90%;
+                    text-align: center;
+                }
+                
+                
+                .mensajesFinales{
+                    text-align: center;
+                }
+                
+                .derechosdeautor{
+                    width: 100%;
+                    background-color: whitesmoke;
+                    p{
+                        color: black;
+                        text-align: center;
+                    }
+                }
+                /* CONTENEDOR TIENDA */
+        .contenedor_tienda{
+            grid-template-columns: auto auto auto;
+        }
+          /* categorias */
+        .contenedor_tienda .categorias{
+            grid-column-start: 1;
+            grid-column-end: -1;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .contenedor_tienda .categorias li{
+            display: inline;
+            margin: 5px;
+        }
+          /* filtro */
+        .contenedor_tienda .filtro{
+            grid-column-start: 1;
+            grid-column-end:-1 ;
+        }
+        .contenedor_tienda .filtro input{
+            width: 100%;
         }
 
+    .mensajes{
+        div{
+            width: 100%;
+            margin: 10px;
+        }
+        }
+    
+        .banner{
+            display: none;
+        }
+        .header_aviso{
+            display: flex;
+            justify-content: space-evenly;
+            p{
+                display: none;
+            }
+            div{
+                margin: 0;
+            }
+        }
+        .header_cont_buscador{
+            width: 80%;
+        }
+        .Header_Logo{
+            height: auto;
+            flex-direction: column;
+        }
+        .Header_cont_logo{
+            width: 100%;
+        }
+        
+        
+    
+        
+        .PiePagina{
+            h2{
+                text-align: center;
+            }
+            height: 400px;
+        }
+            .conteiner_redes{
+                justify-content: center;
+                width: 100%;
+                div{
+                        img{
+                            width: 40px;
+                        }
+                }
+        
+            }
+        .PiePagina_Subs_mensaje{
+            form{
+                width: 100%;
+            }
+            margin-left:auto;
+            width: 90%;
+            input{
+                width: 90%;
+            }
+        }
+        
+        
+        .hola{
+            margin: 20px;
+            border-radius: 5px;
+            background-color: yellow;
+            width: 90%;
+            text-align: center;
+        }
+        
+        
+        .mensajesFinales{
+            text-align: center;
+        }
+        
+        .derechosdeautor{
+            width: 100%;
+            background-color: whitesmoke;
+            p{
+                color: black;
+                text-align: center;
+            }
+        }
+        /* CONTENEDOR TIENDA */
+.contenedor_tienda{
+    grid-template-columns: auto auto;
+}
+  /* categorias */
+.contenedor_tienda .categorias{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.contenedor_tienda .categorias li{
+    display: inline;
+}
+  /* filtro */
+.contenedor_tienda .filtro{
+    grid-column-start: 1;
+    grid-column-end:-1 ;
+}
+.contenedor_tienda .filtro input{
+    width: 100%;
+}
+
+/* Productos */
+.producto1{
+width: 100%;
+}
+
+
+        }
