@@ -167,6 +167,7 @@ p {
 
 /*media queries*/
 @media (max-width: 320px) {
+  margin: 0;
   .somosJano {
     grid-column-start: 1;
     grid-column-end: -1; }
@@ -710,8 +711,9 @@ p {
   font-family: monospace;
   background-color: black;
   border: 1px solid white;
-  width: 450px;
-  margin: 10px;
+  width: auto;
+  max-width: 450px;
+  margin-bottom: 15px;
   padding: 10px 20px;
   box-sizing: border-box;
   border-radius: 7px; }
@@ -741,7 +743,7 @@ p {
 
 .listaContacto {
   font-family: monospace;
-  width: 450px;
+  width: auto;
   padding: 10px 20px;
   border-radius: 7px;
   background-color: white; }
